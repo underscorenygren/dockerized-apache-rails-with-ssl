@@ -12,7 +12,7 @@ I was surprised I didn't come across this in my searching, so I decided to build
 
 I've got most of my info from here: 
 
-[http://blog.miloot.com/blog/2013/10/25/how-to-setup-apache-with-passanger-plus-https-and-rails/]
+http://blog.miloot.com/blog/2013/10/25/how-to-setup-apache-with-passanger-plus-https-and-rails/
 
 You'll need to build a Debian Wheezy dist of the dockerized http and call it `httpd-wheezy`, 
 I haven't added it to the Docker hub. You can get it by cloning `git@github.com:underscorenygren/httpd.git`
