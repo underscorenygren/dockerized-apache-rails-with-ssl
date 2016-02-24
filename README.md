@@ -22,6 +22,15 @@ I haven't added it to the Docker hub. You can get it by cloning `git@github.com:
   - `docker build -t httpd-wheezy .`
 - (Inside this directory once again)
  - `docker-compose up -d`
+- If you haven't done so already, add your docker ip to your `/etc/hosts/`
+- I'll assume `local.development.com` is your intended host. Note that 
+this should probably line up with the values you put in your key generation.
+  - ie. `sudo echo "192.168.99.100 local.development.com" >> /etc/hosts`
+- Navigate to http://local.development.com
+  - You should see the rails landing page
+- Navigate to https://local.development.com
+  - You should get an SSL warning, which you click ignore on. 
+  - You should see the rails landing page
 
 The included rails files are a rails started project (`rails new ...`) with `passenger` 
 and `therubyracer` installed (the latter to make V8 and rails-coffee work correctly - 
