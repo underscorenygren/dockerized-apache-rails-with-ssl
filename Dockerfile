@@ -26,7 +26,8 @@ COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 
 ADD ./rails /data/app/website/rails
 WORKDIR /data/app/website/rails
-EXPOSE 3000
+EXPOSE 80
+EXPOSE 443
 
 #Why is this 1.9.1 and not 1.9.3? Ruby mysteries. Both are on the machine...
 RUN /var/lib/gems/1.9.1/gems/passenger-5.0.25/bin/passenger-install-apache2-module -a
