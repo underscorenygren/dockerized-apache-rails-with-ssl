@@ -6,6 +6,7 @@ RUN apt-get update --fix-missing && \
     libsqlite3-dev \
     openssl \
     g++ \
+    git \
     libcurl4-openssl-dev \
     libaprutil1-dev \
     make \
